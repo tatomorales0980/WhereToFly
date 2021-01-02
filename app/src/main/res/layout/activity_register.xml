@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme1_one"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/theme1_dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivProfileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_icon"
+            android:layout_marginTop="10dp"
+            app:civ_border_width="2dp"
+            android:elevation="5dp"
+            app:civ_border_color="#FF000000"/>
+
+        <ImageView
+            android:id="@+id/ivBackRegister"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_arrowback"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/StyledTilEditText"
+                style="@style/StyledTilEditText"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/orange_700"
+                android:hint="@string/userEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:inputType="textEmailAddress"
+                    style="@style/StyledTilEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/StyledTilEditText"
+                android:textColorHint="@color/white"
+                style="@style/StyledTilEditTextTheme"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/orange_700"
+                android:hint="@string/userPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    style="@style/StyledTilEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/StyledTilEditText"
+                android:textColorHint="@color/white"
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="@color/orange_700"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/theme1_dark"
+                style="@style/StyledTilEditTextTheme"
+                android:hint="@string/userName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    style="@style/StyledTilEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/StyledTilEditText"
+                android:textColorHint="@color/white"
+                app:startIconDrawable="@drawable/ic_emoji"
+                app:startIconTint="@color/orange_700"
+                style="@style/StyledTilEditTextTheme"
+                android:hint="@string/userNick">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiUserNickName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    style="@style/StyledTilEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/StyledTilEditText"
+                android:textColorHint="@color/white"
+                style="@style/StyledTilEditTextTheme"
+                app:startIconDrawable="@drawable/ic_smartphone"
+                app:startIconTint="@color/orange_700"
+                android:hint="@string/userPhone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiUserPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:textColor="@color/white"
+                    android:inputType="phone"
+                    android:textSize="20sp"
+                    style="@style/StyledTilEditText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="32dp"
+                    android:text="@string/selectCountrie"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"></TextView>
+
+                <Spinner
+                    android:id="@+id/spCountries"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tiUserNickName"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="32dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLines="10"
+                    android:textColor="@color/white"
+                    android:autofillHints="@string/selectCountrie"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:popupBackground="@color/white"
+                    android:dropDownSelector="@color/white"
+                    android:scrollbarSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="32dp"
+                    android:text="@string/selectState"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"></TextView>
+
+                <Spinner
+                    android:id="@+id/spStates"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tiUserNickName"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="32dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:maxLines="10"
+                    android:textColor="@color/white"
+                    android:autofillHints="@string/selectCountrie"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:popupBackground="@color/white"
+                    android:dropDownSelector="@color/white"
+                    android:scrollbarSize="20dp" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/orange_700"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/btnSave"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>

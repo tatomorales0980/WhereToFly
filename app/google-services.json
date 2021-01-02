@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533846370081",
+    "project_id": "wheretofly-89224",
+    "storage_bucket": "wheretofly-89224.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533846370081:android:b4c5170eba0616820d0060",
+        "android_client_info": {
+          "package_name": "com.tato0980.wheretofly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533846370081-lrptngi357v4atabpfntmg95osgl2uu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgUixdGHJegyDkSF94EkPoYCBNii51guQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533846370081-lrptngi357v4atabpfntmg95osgl2uu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
